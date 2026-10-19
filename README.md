@@ -15,6 +15,20 @@ Tout est tracé : chaque création, modification (avec l'avant et l'après), val
 annulation, avenant, export et connexion est inscrit au journal, qui ne se modifie pas.
 Rien ne se supprime : une dépense fausse est rejetée ou annulée, avec son motif.
 
+## Documentation
+
+Dans `docs/`, en HTML et en PDF :
+
+| Document | Pour qui |
+|---|---|
+| `manuel.pdf`, `guide.pdf` | Nourane : les trois manuels et les trois guides réunis |
+| `manuel-ingenieure.pdf`, `guide-ingenieure.pdf` | L'ingénieure |
+| `manuel-chef-de-chantier.pdf`, `guide-chef-de-chantier.pdf` | Les chefs de chantier |
+| `manuel-client.pdf`, `guide-client.pdf` | Les clients |
+
+Le manuel décrit chaque écran avec ses captures ; le guide de première utilisation donne les
+étapes dans l'ordre, avec le schéma de ce qui dépend de quoi.
+
 ## Fonctionnalités
 
 | Cahier des charges | Où |

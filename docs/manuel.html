@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Manuel d'utilisation - Nourane Génie Civil</title>
+<link rel="stylesheet" href="style-documents.css">
+</head>
+<body>
+
+<section class="garde">
+  <div>
+    <div class="bande"></div>
+    <img class="logo" src="img/logo-nourane.png" alt="Logo Nourane Génie Civil">
+    <h1>Manuel d'utilisation</h1>
+    <p class="sous">Application de gestion des coûts de construction<br>des maisons et des bâtiments</p>
+    <span class="ue">Ingénieure · Chef de chantier · Client</span>
+  </div>
+  <div class="bas">
+    <table>
+      <tr><td style="width:40%"><b>Application</b></td><td>Nourane Génie Civil, application web (ordinateur et téléphone)</td></tr>
+      <tr><td><b>Cadre</b></td><td>Projet de l'unité d'enseignement Statistique, 3<sup>e</sup> année de Génie Civil</td></tr>
+      <tr><td><b>Contenu</b></td><td>Les manuels de l'Ingénieure, du Chef de chantier et du Client</td></tr>
+      <tr><td><b>Version du document</b></td><td>1.0 · Octobre 2026</td></tr>
+    </table>
+  </div>
+</section>
+
+<section class="chapitre sommaire">
+  <h2>Sommaire général</h2>
+  <h3>Partie 1 — Manuel l'Ingénieure</h3>
+  <ol>
+    <li><span>1.1. Se connecter et se repérer</span></li>
+    <li><span>1.2. Mon compte et mon mot de passe</span></li>
+    <li><span>1.3. Les comptes des utilisateurs</span></li>
+    <li><span>1.4. Créer un projet et son budget prévisionnel</span></li>
+    <li><span>1.5. Le tableau de bord d'un projet</span></li>
+    <li><span>1.6. Les dépenses : saisir, valider, rejeter, annuler</span></li>
+    <li><span>1.7. Le budget : suivi et avenants</span></li>
+    <li><span>1.8. L'avancement des travaux</span></li>
+    <li><span>1.9. Les versements du client</span></li>
+    <li><span>1.10. L'analyse statistique</span></li>
+    <li><span>1.11. Comparer les projets</span></li>
+    <li><span>1.12. Rapports PDF et exports Excel</span></li>
+    <li><span>1.13. Articles, fournisseurs et journal</span></li>
+    <li><span>1.14. Questions fréquentes</span></li>
+  </ol>
+  <h3>Partie 2 — Manuel du Chef de chantier</h3>
+  <ol>
+    <li><span>2.1. Se connecter et installer l'application sur le téléphone</span></li>
+    <li><span>2.2. Mon compte et mon mot de passe</span></li>
+    <li><span>2.3. Le tableau de bord de mon chantier</span></li>
+    <li><span>2.4. Saisir une dépense</span></li>
+    <li><span>2.5. Suivre, corriger ou retirer mes saisies</span></li>
+    <li><span>2.6. Déclarer l'avancement des travaux</span></li>
+    <li><span>2.7. Articles et fournisseurs</span></li>
+    <li><span>2.8. Questions fréquentes</span></li>
+  </ol>
+  <h3>Partie 3 — Manuel du Client</h3>
+  <ol>
+    <li><span>3.1. Se connecter et se repérer</span></li>
+    <li><span>3.2. Mon compte et mon mot de passe</span></li>
+    <li><span>3.3. Le tableau de bord de mon projet</span></li>
+    <li><span>3.4. Suivre l'avancement des travaux</span></li>
+    <li><span>3.5. Les dépenses et le budget</span></li>
+    <li><span>3.6. Mes versements</span></li>
+    <li><span>3.7. L'analyse, le rapport PDF et l'export Excel</span></li>
+    <li><span>3.8. Questions fréquentes</span></li>
+  </ol>
+  <div class="encadre">Ce document réunit les trois manuels. Chaque profil reçoit aussi le sien, séparément : <i>Manuel de l'Ingénieure</i>, <i>Manuel du Chef de chantier</i>, <i>Manuel du Client</i>.</div>
+</section>
+
+<section class="chapitre sommaire">
+  <h2>Partie 1 — Manuel l'Ingénieure</h2>
+  <ol>
+    <li><span>1.1. Se connecter et se repérer</span></li>
+    <li><span>1.2. Mon compte et mon mot de passe</span></li>
+    <li><span>1.3. Les comptes des utilisateurs</span></li>
+    <li><span>1.4. Créer un projet et son budget prévisionnel</span></li>
+    <li><span>1.5. Le tableau de bord d'un projet</span></li>
+    <li><span>1.6. Les dépenses : saisir, valider, rejeter, annuler</span></li>
+    <li><span>1.7. Le budget : suivi et avenants</span></li>
+    <li><span>1.8. L'avancement des travaux</span></li>
+    <li><span>1.9. Les versements du client</span></li>
+    <li><span>1.10. L'analyse statistique</span></li>
+    <li><span>1.11. Comparer les projets</span></li>
+    <li><span>1.12. Rapports PDF et exports Excel</span></li>
+    <li><span>1.13. Articles, fournisseurs et journal</span></li>
+    <li><span>1.14. Questions fréquentes</span></li>
+  </ol>
+  <div class="encadre">
+    <b>Votre rôle.</b> Vous êtes la propriétaire de l'application : vous voyez tous les projets et vous gardez la main sur les décisions.
+    <ul>
+      <li>Vous créez les <b>comptes</b> des clients et des chefs de chantier, et les <b>projets</b> avec leur budget prévisionnel.</li>
+      <li>Vous <b>validez</b> les dépenses et l'avancement saisis par les chefs de chantier, et vous <b>confirmez</b> les versements déclarés par les clients.</li>
+      <li>Vous seule révisez un budget par <b>avenant</b>, annulez une dépense déjà validée et consultez le <b>journal</b>.</li>
+      <li>Vous disposez de l'<b>analyse statistique</b> complète, de la <b>comparaison des projets</b> et des <b>rapports</b>.</li>
+    </ul>
+    Tout ce que vous faites est inscrit au journal, comme ce que font les autres utilisateurs.
+  </div>
+</section>
+
+<section class="chapitre">
+  <h2>1.1. Se connecter et se repérer</h2>
+  <p>Ouvrez l'adresse de l'application dans un navigateur, sur ordinateur ou sur téléphone. La page d'accueil présente l'application ; le bouton <b>Connexion</b>, en haut à droite, ouvre l'écran de connexion.</p>
+  <figure><img src="img/manuel/commun-accueil.png" alt=""><figcaption>Figure 1 — Page d'accueil</figcaption></figure>
+  <p>Saisissez votre <b>numéro de téléphone</b> et votre <b>mot de passe</b>. L'œil à droite du champ affiche le mot de passe tapé. Le numéro s'écrit avec ou sans espaces, avec ou sans l'indicatif 237. Une session dure 12 heures ; ensuite, l'application vous demande de vous reconnecter.</p>
+  <figure><img src="img/manuel/commun-connexion.png" alt=""><figcaption>Figure 2 — Écran de connexion</figcaption></figure>
+  <figure><img src="img/manuel/ing-projets.png" alt=""><figcaption>Figure 3 — La liste des projets, première page après la connexion</figcaption></figure>
+  <ul>
+    <li><b>Le menu de gauche</b> donne accès aux <b>Projets</b>, à la <b>Comparaison</b> des projets, aux <b>Utilisateurs</b>, aux <b>Articles et fournisseurs</b> et au <b>Journal</b>. Sous « Chantiers », chaque projet s'ouvre d'un clic.</li>
+    <li><b>Votre nom</b>, en bas du menu, ouvre « Mon compte » ; <b>Déconnexion</b> ferme la session.</li>
+    <li><b>La flèche</b> en haut à gauche replie le menu ; <b>la lune</b> en haut à droite passe en mode sombre (le soleil revient au mode clair).</li>
+    <li><b>Sur téléphone</b>, le menu s'ouvre avec le bouton ☰ en haut à gauche.</li>
+  </ul>
+  <p>La liste des projets affiche, pour chacun, le budget consommé et les travaux réalisés en barres, le dépensé, le budget révisé, la fin prévue, le nombre d'alertes et de saisies en attente. Les quatre cartes du haut totalisent tous les projets.</p>
+  <div class="encadre"><b>Les pages s'ouvrent vite.</b> Une page déjà vue se rouvre aussitôt avec sa dernière version, puis se met à jour : une fine barre rose en haut de l'écran signale la mise à jour. À la première ouverture, des blocs gris à la forme du contenu s'affichent le temps du chargement.</div>
+</section>
+
+<section class="chapitre">
+  <h2>1.2. Mon compte et mon mot de passe</h2>
+  <p>Cliquez sur votre nom en bas du menu. La page « Mon compte » rappelle votre nom, votre rôle, votre téléphone (votre identifiant) et votre dernière connexion.</p>
+  <p><b>Changer mon mot de passe</b> : le mot de passe actuel, puis le nouveau deux fois. Il doit compter au moins 8 caractères.</p>
+  <figure><img src="img/manuel/commun-mot-de-passe.png" alt="" style="max-height:80mm"><figcaption>Figure 4 — Changer mon mot de passe</figcaption></figure>
+  <div class="encadre attention">Le mot de passe de votre compte protège toutes les données des chantiers : choisissez-en un que personne ne devine, et ne le communiquez pas.</div>
+</section>
+
+<section class="chapitre">
+  <h2>1.3. Les comptes des utilisateurs</h2>
+  <p>Seule l'ingénieure crée les comptes. Ouvrez <b>Utilisateurs</b> dans le menu.</p>
+  <figure><img src="img/manuel/ing-utilisateurs.png" alt=""><figcaption>Figure 5 — Utilisateurs : nouveau compte et liste des comptes</figcaption></figure>
+  <h3>Créer un compte</h3>
+  <table>
+    <tr><th style="width:32%">Champ</th><th>Ce qu'il faut savoir</th></tr>
+    <tr><td>Prénom, Nom</td><td>Ils s'affichent dans l'application et dans le journal.</td></tr>
+    <tr><td>Téléphone (identifiant)</td><td>8 à 12 chiffres ; il sert à se connecter et doit être unique.</td></tr>
+    <tr><td>Rôle</td><td><b>Client</b>, <b>Chef de chantier</b> ou <b>Ingénieure</b>. Un compte n'a qu'un rôle.</td></tr>
+    <tr><td>E-mail</td><td>Facultatif.</td></tr>
+    <tr><td>Mot de passe provisoire</td><td>8 caractères au moins. Communiquez-le à la personne : elle le changera dans « Mon compte ».</td></tr>
+  </table>
+  <h3>Gérer un compte</h3>
+  <ul>
+    <li><b>Mot de passe</b> : donne un nouveau mot de passe provisoire à une personne qui a oublié le sien.</li>
+    <li><b>Désactiver</b> : la personne ne peut plus se connecter. Le compte n'est jamais supprimé : ses saisies restent attribuées à leur auteur. <b>Réactiver</b> le rouvre.</li>
+  </ul>
+  <p>La colonne <b>Projets</b> indique combien de projets suit un client ou dirige un chef de chantier ; <b>Dernière connexion</b> montre qui utilise l'application.</p>
+  <div class="encadre attention">Vous ne pouvez pas désactiver votre propre compte.</div>
+</section>
+
+<section class="chapitre">
+  <h2>1.4. Créer un projet et son budget prévisionnel</h2>
+  <h3>Étape 1 : les informations générales</h3>
+  <p>Dans <b>Projets</b>, cliquez sur <b>Nouveau projet</b>. Le compte du client doit exister avant : créez-le d'abord dans Utilisateurs.</p>
+  <figure><img src="img/manuel/ing-nouveau-projet.png" alt=""><figcaption>Figure 6 — Nouveau projet</figcaption></figure>
+  <table>
+    <tr><th style="width:32%">Champ</th><th>Ce qu'il faut savoir</th></tr>
+    <tr><td>Code</td><td>Proposé automatiquement (PRJ-année-numéro) ; vous pouvez le changer. Il est unique.</td></tr>
+    <tr><td>Type d'ouvrage</td><td>Maison individuelle, immeuble, bâtiment commercial, bâtiment public ou autre ouvrage.</td></tr>
+    <tr><td>Surface bâtie (m²)</td><td>La base du <b>coût au m²</b>, qui rend les projets comparables entre eux.</td></tr>
+    <tr><td>Dates de début et de fin prévue</td><td>Elles servent au délai écoulé et à la prévision du coût final.</td></tr>
+    <tr><td>Client</td><td>Obligatoire : il suivra le projet.</td></tr>
+    <tr><td>Chef de chantier</td><td>Facultatif à la création ; il pourra être désigné plus tard dans Paramètres.</td></tr>
+    <tr><td>Lots de travaux</td><td>Onze lots de bâtiment sont cochés par défaut, de l'installation de chantier aux finitions. Décochez ceux qui ne servent pas et ajoutez les vôtres dans « Autres lots », un par ligne.</td></tr>
+  </table>
+  <p><b>Créer le projet et saisir le budget</b> enregistre le projet, au statut « En préparation », et ouvre son onglet Budget.</p>
+
+  <h3>Étape 2 : le budget prévisionnel ventilé</h3>
+  <p>Le budget se saisit dans une grille : une ligne par lot, une colonne par catégorie de dépense (matériaux, main-d'œuvre, transport, location d'équipements, autres frais). Laissez vide ou à 0 une case sans objet. Le budget initial est la somme de la grille.</p>
+  <figure><img src="img/manuel/ing-budget-grille.png" alt=""><figcaption>Figure 7 — La grille du budget prévisionnel, tant que le projet est en préparation</figcaption></figure>
+
+  <h3>Étape 3 : lancer le projet</h3>
+  <p>Quand le budget est prêt, ouvrez l'onglet <b>Paramètres</b> et passez le statut à <b>En cours</b>. Le budget initial est alors figé : il ne se modifie plus que par avenant (chapitre 7). Les autres informations du projet restent modifiables ; chaque changement est inscrit au journal avec l'ancienne et la nouvelle valeur.</p>
+  <figure><img src="img/manuel/ing-parametres.png" alt=""><figcaption>Figure 8 — Paramètres du projet</figcaption></figure>
+  <table>
+    <tr><th style="width:24%">Statut</th><th>Effet</th></tr>
+    <tr><td>En préparation</td><td>Le budget initial se saisit et se corrige librement.</td></tr>
+    <tr><td>En cours</td><td>Budget initial figé, révisable par avenants ; dépenses et avancement se saisissent.</td></tr>
+    <tr><td>Suspendu</td><td>Un motif est obligatoire ; les saisies restent possibles pour régulariser.</td></tr>
+    <tr><td>Terminé</td><td>Plus aucune dépense ni aucun relevé ; le projet reste consultable et exportable.</td></tr>
+  </table>
+  <div class="encadre">Un projet n'est jamais supprimé : ses chiffres servent à comparer le coût au m² des projets suivants.</div>
+</section>
+
+<section class="chapitre">
+  <h2>1.5. Le tableau de bord d'un projet</h2>
+  <p>Cliquez sur un projet : son tableau de bord s'ouvre. Sous le nom du projet, les <b>onglets</b> mènent aux dépenses, au budget, à l'avancement, aux versements, à l'analyse, au journal et aux paramètres. Une pastille rose sur un onglet compte les éléments qui attendent votre validation.</p>
+  <figure><img src="img/manuel/ing-tableau.png" alt=""><figcaption>Figure 9 — Tableau de bord de la villa d'Odza</figcaption></figure>
+  <table>
+    <tr><th style="width:28%">Carte</th><th>Ce qu'elle mesure</th></tr>
+    <tr><td>Budget révisé</td><td>Budget initial + avenants. C'est la référence de tous les écarts.</td></tr>
+    <tr><td>Dépensé (validé)</td><td>Somme des dépenses validées, en FCFA et en % du budget révisé ; les dépenses en attente sont indiquées à part.</td></tr>
+    <tr><td>Budget restant</td><td>Budget révisé − dépensé. En rouge s'il est négatif : le budget est dépassé.</td></tr>
+    <tr><td>Travaux réalisés</td><td>Avancement global, chaque lot pesant selon son budget ; comparé au délai écoulé.</td></tr>
+    <tr><td>Coût final estimé</td><td>Ce que coûterait le projet achevé au rythme actuel (chapitre 10, valeur acquise).</td></tr>
+    <tr><td>Versements du client</td><td>Versements confirmés ; ceux à confirmer sont indiqués à part.</td></tr>
+    <tr><td>Trésorerie du chantier</td><td>Versements reçus − dépenses validées. Négative, elle signale qu'il faut un nouveau versement.</td></tr>
+  </table>
+  <h3>Les alertes</h3>
+  <p>Les alertes sont recalculées à chaque ouverture. Les critiques (rouge) passent avant celles qui demandent votre attention (orange) et les simples informations (bleu).</p>
+  <figure><img src="img/manuel/ing-alertes.png" alt=""><figcaption>Figure 10 — Alertes du projet</figcaption></figure>
+  <table>
+    <tr><th style="width:34%">Alerte</th><th>Quand elle se déclenche</th></tr>
+    <tr><td>Budget presque épuisé / dépassé</td><td>80 % du budget révisé consommé (attention), puis 100 % (critique).</td></tr>
+    <tr><td>Poste dépassé, lots dépassés</td><td>Le dépensé d'une catégorie ou d'un lot dépasse son budget révisé.</td></tr>
+    <tr><td>Dépassement prévu à l'achèvement</td><td>Le coût final estimé dépasse le budget ; critique au-delà de 10 %.</td></tr>
+    <tr><td>Les dépenses vont plus vite que les travaux</td><td>Le % du budget consommé dépasse de plus de 10 points le % des travaux réalisés.</td></tr>
+    <tr><td>Prix inhabituel</td><td>Un prix unitaire s'écarte de plus de 2,5 écarts-types de la moyenne des achats validés du même article (dès 4 achats). Signalé avant validation quand la dépense est en attente.</td></tr>
+    <tr><td>Fonds insuffisants</td><td>Les dépenses validées dépassent les versements reçus du client.</td></tr>
+    <tr><td>Dépenses en attente</td><td>Des saisies attendent votre décision depuis plus de 7 jours.</td></tr>
+    <tr><td>Date de fin dépassée</td><td>La fin prévue est passée et le projet n'est pas terminé.</td></tr>
+    <tr><td>Justificatifs manquants</td><td>Plus de 20 % du montant dépensé n'a ni numéro de reçu ni photo.</td></tr>
+  </table>
+  <h3>Les graphiques</h3>
+  <p>La <b>courbe en S</b> montre le coût cumulé des dépenses validées, jour après jour, et sa tendance prolongée en pointillé jusqu'à la fin prévue ; la ligne grise marque le budget révisé. L'<b>anneau</b> donne la part de chaque catégorie, et les <b>barres</b> comparent, par catégorie, le budget révisé (rose clair) au dépensé (rose, ou rouge en cas de dépassement).</p>
+  <figure><img src="img/manuel/ing-courbe.png" alt=""><figcaption>Figure 11 — Évolution du coût cumulé et répartition par catégorie</figcaption></figure>
+</section>
+
+<section class="chapitre">
+  <h2>1.6. Les dépenses : saisir, valider, rejeter, annuler</h2>
+  <p>L'onglet <b>Dépenses</b> liste toutes les dépenses du projet, des plus récentes aux plus anciennes. Les filtres du haut cherchent par libellé ou numéro de reçu, par catégorie, par lot, par mois et par statut ; les totaux se recalculent sur la sélection.</p>
+  <figure><img src="img/manuel/ing-depenses-attente.png" alt=""><figcaption>Figure 12 — Dépenses en attente de validation</figcaption></figure>
+  <h3>Saisir une dépense</h3>
+  <p><b>Nouvelle dépense</b> ouvre le formulaire décrit au chapitre 4 du manuel du chef de chantier. Le <b>montant</b> n'est jamais saisi : il vaut <span class="formule" style="display:inline">quantité × prix unitaire</span>, calculé pendant la frappe puis recalculé par le serveur. Vos propres dépenses sont <b>validées d'office</b>.</p>
+  <h3>Décider des saisies du chef de chantier</h3>
+  <ul>
+    <li><b>Valider</b> : la dépense entre dans les totaux, les graphiques et l'analyse ; le client la voit.</li>
+    <li><b>Rejeter</b> : un motif vous est demandé (par exemple « reçu illisible ») ; le chef le voit et ressaisit la dépense si besoin.</li>
+    <li><b>Annuler</b> une dépense déjà validée, reconnue fausse : un motif est demandé, et la dépense reste visible, barrée, avec son motif. Rien ne se supprime.</li>
+  </ul>
+  <p>Sous le libellé, un <b>trombone</b> indique un justificatif (numéro de reçu ou photo), et la mention orange <b>Prix inhabituel</b> donne le score z et le prix moyen de l'article : vérifiez le reçu avant de valider.</p>
+  <h3>Le détail d'une dépense</h3>
+  <p>Cliquez sur un libellé : la fiche donne la quantité, le prix, le fournisseur, le reçu, qui l'a saisie et qui l'a décidée, avec la date et l'heure. <b>Voir la photo du reçu</b> ouvre la photo (le lien reste valable 10 minutes). L'<b>historique</b> retrace chaque opération, avec l'avant et l'après d'une correction. Tant qu'elle est en attente, la dépense peut encore être corrigée.</p>
+  <figure><img src="img/manuel/chef-historique.png" alt="" style="max-height:60mm"><figcaption>Figure 13 — Historique d'une dépense</figcaption></figure>
+</section>
+
+<section class="chapitre">
+  <h2>1.7. Le budget : suivi et avenants</h2>
+  <p>Une fois le projet lancé, l'onglet <b>Budget</b> montre la même grille lot × catégorie, avec dans chaque case le <b>dépensé / budget révisé</b>. Une case rouge signale un dépassement ; la dernière colonne donne le pourcentage consommé de chaque lot, et la ligne Total celui de chaque catégorie.</p>
+  <figure><img src="img/manuel/ing-budget-suivi.png" alt=""><figcaption>Figure 14 — Budget ventilé par lot et par catégorie</figcaption></figure>
+  <h3>Réviser le budget par avenant</h3>
+  <p>Une hausse de prix, un ouvrage ajouté à la demande du client : le budget d'une ligne se révise par <b>avenant</b>. Choisissez le lot, la catégorie, le sens (hausse ou baisse), le montant, la date et le <b>motif</b>, obligatoire. Le budget initial n'est jamais modifié : l'écart entre budget initial, budget révisé et dépensé reste mesurable. Une baisse ne peut pas rendre une ligne négative.</p>
+  <figure><img src="img/manuel/ing-avenant.png" alt=""><figcaption>Figure 15 — Nouvel avenant</figcaption></figure>
+  <p>Le tableau <b>Avenants</b> garde toutes les révisions, et <b>Ajouter un lot de travaux</b> crée un lot oublié à la création.</p>
+</section>
+
+<section class="chapitre">
+  <h2>1.8. L'avancement des travaux</h2>
+  <p>Le chef de chantier déclare, lot par lot, le <b>pourcentage cumulé</b> réalisé à une date, avec une photo s'il le souhaite. Vous validez ou rejetez ces relevés dans l'onglet <b>Avancement</b> ; vos propres relevés sont validés d'office.</p>
+  <figure><img src="img/manuel/ing-avancement.png" alt=""><figcaption>Figure 16 — Avancement par lot</figcaption></figure>
+  <ul>
+    <li>Valider un relevé fixe l'avancement du lot à ce pourcentage. C'est cette valeur qui entre dans la valeur acquise et le coût final estimé.</li>
+    <li>L'<b>avancement global</b> pondère chaque lot par son budget : un lot cher compte plus qu'un lot bon marché.</li>
+    <li>Le graphique « Travaux réalisés et budget consommé » compare les deux pourcentages lot par lot : un lot dont la barre rose dépasse nettement la bleue coûte plus cher que prévu pour ce qui est fait.</li>
+    <li>Un <b>recul</b> de l'avancement (démolition, malfaçon) est accepté s'il est expliqué en commentaire.</li>
+  </ul>
+  <figure><img src="img/manuel/ing-releves.png" alt=""><figcaption>Figure 17 — Relevés : le dernier attend votre validation</figcaption></figure>
+</section>
+
+<section class="chapitre">
+  <h2>1.9. Les versements du client</h2>
+  <p>Le client déclare ses versements ; vous confirmez leur réception dans l'onglet <b>Versements</b>. Seuls les versements confirmés comptent dans la trésorerie. Vous pouvez aussi enregistrer vous-même un versement reçu : il est confirmé d'office.</p>
+  <figure><img src="img/manuel/ing-versements.png" alt=""><figcaption>Figure 18 — Historique des versements</figcaption></figure>
+  <ul>
+    <li><b>Confirmer</b> : les fonds ont été reçus.</li>
+    <li><b>Rejeter</b> : avec un motif, par exemple « fonds non reçus ».</li>
+  </ul>
+  <p>La barre « Financement du projet » donne la part du budget révisé déjà versée ; un message rouge prévient quand les dépenses validées dépassent les fonds reçus.</p>
+</section>
+
+<section class="chapitre">
+  <h2>1.10. L'analyse statistique</h2>
+  <p>L'onglet <b>Analyse</b> porte sur les <b>dépenses validées</b>. Chaque section rappelle la période, l'unité et l'effectif sur lesquels elle porte.</p>
+  <h3>1. Dépenses par catégorie</h3>
+  <p>Budget révisé, dépensé, écart (dépensé − révisé : positif, le poste dépasse), pourcentage consommé et part de chaque catégorie dans le coût total.</p>
+  <figure><img src="img/manuel/ing-analyse-categories.png" alt=""><figcaption>Figure 19 — Dépenses par catégorie</figcaption></figure>
+  <h3>2 et 3. Dépenses par mois, prévision du coût final</h3>
+  <p>Les barres empilées donnent le montant validé de chaque mois, par catégorie. La prévision ajuste une <b>droite de régression</b> sur le coût cumulé :</p>
+  <span class="formule">coût cumulé = a × t + b, t en jours depuis le début ; coût prévu = a × (jour de fin prévue) + b</span>
+  <p>La pente <b>a</b> est le rythme de dépense en FCFA par jour, et <b>R²</b> la part de la variation du coût cumulé expliquée par le temps. L'<b>intervalle de prévision à 95 %</b> (loi de Student à n − 2 degrés de liberté) encadre le coût prévu. Il faut au moins 3 jours de dépenses validées, sur un projet non terminé. Hypothèse : le rythme reste constant jusqu'à la fin.</p>
+  <figure><img src="img/manuel/ing-analyse-prevision.png" alt="" style="max-height:105mm"><figcaption>Figure 20 — Prévision du coût final par régression</figcaption></figure>
+  <h3>4. Valeur acquise</h3>
+  <p>La méthode de la valeur acquise compare ce qu'ont coûté les travaux réalisés à ce qu'ils devaient coûter.</p>
+  <span class="formule">EV = Σ budget du lot × % réalisé · CPI = EV / coût réel · EAC = budget / CPI · VAC = budget − EAC</span>
+  <p>CPI inférieur à 1 : chaque franc dépensé produit moins d'un franc de travaux prévus, le projet dérive vers un dépassement. Le coût au m² est donné réel, budgété et estimé à l'achèvement.</p>
+  <figure><img src="img/manuel/ing-analyse-valeur-acquise.png" alt=""><figcaption>Figure 21 — Valeur acquise et coût au m²</figcaption></figure>
+  <h3>5 et 6. Statistique descriptive, boîte à moustaches, histogramme</h3>
+  <p>Sur le montant de chaque dépense validée : effectif, total, moyenne, médiane, écart-type, coefficient de variation (écart-type / moyenne), quartiles, minimum et maximum, et l'<b>intervalle de confiance à 95 %</b> de la dépense moyenne. Une moyenne nettement au-dessus de la médiane signale quelques grosses dépenses qui tirent la moyenne vers le haut.</p>
+  <figure><img src="img/manuel/ing-analyse-descriptive.png" alt=""><figcaption>Figure 22 — Statistique descriptive des montants</figcaption></figure>
+  <p>La <b>boîte à moustaches</b> de Tukey place Q1, la médiane et Q3 ; les points rouges sont les dépenses atypiques, au-delà de Q3 + 1,5 × (Q3 − Q1). L'<b>histogramme</b> répartit les montants en classes d'égale amplitude, leur nombre suivant la règle de Sturges k = 1 + log₂(n).</p>
+  <figure><img src="img/manuel/ing-analyse-boite.png" alt="" style="max-height:110mm"><figcaption>Figure 23 — Boîte à moustaches et histogramme</figcaption></figure>
+  <h3>7. Diagramme de Pareto</h3>
+  <p>Les articles sont classés du plus coûteux au moins coûteux, avec leur part et leur part cumulée. La <b>classe A</b> regroupe les articles qui font ensemble 80 % du coût : ce sont eux qu'il faut négocier et surveiller en priorité. La classe B va jusqu'à 95 %, la classe C au-delà.</p>
+  <figure><img src="img/manuel/ing-analyse-pareto.png" alt=""><figcaption>Figure 24 — Diagramme de Pareto des principaux postes de coût</figcaption></figure>
+  <h3>8 et 9. Prix unitaires, fournisseurs</h3>
+  <p>Pour chaque article : nombre d'achats, prix moyen, minimum, maximum, écart-type, coefficient de variation (sous 15 %, prix stable) et variation entre le premier et le dernier achat. Les prix inhabituels sont listés avec leur score z :</p>
+  <span class="formule">z = (prix − prix moyen de l'article) / écart-type ; inhabituel si |z| &gt; 2,5</span>
+  <p>L'écart-type retenu vaut au moins 2 % du prix moyen : sur un article au prix presque fixe, un écart de quelques francs donnerait sinon un z énorme. La dernière section répartit les dépenses par fournisseur.</p>
+  <figure><img src="img/manuel/ing-analyse-prix.png" alt=""><figcaption>Figure 25 — Prix unitaires par article</figcaption></figure>
+</section>
+
+<section class="chapitre">
+  <h2>1.11. Comparer les projets</h2>
+  <p><b>Comparaison</b>, dans le menu, met tous les projets côte à côte : budget révisé, dépensé, pourcentages consommé et réalisé, CPI, coût final estimé et coût au m². En haut, la moyenne, l'écart-type et le coefficient de variation du coût au m² entre projets.</p>
+  <figure><img src="img/manuel/ing-comparaison.png" alt=""><figcaption>Figure 26 — Tableau comparatif des projets</figcaption></figure>
+  <p>Le <b>coût au m² de référence</b> est le coût réel pour un projet terminé et le coût estimé à l'achèvement pour un projet en cours ; la ligne pointillée marque la moyenne. Les graphiques suivants comparent le budget consommé aux travaux réalisés, puis la structure des coûts de chaque projet par catégorie.</p>
+  <figure><img src="img/manuel/ing-comparaison-m2.png" alt=""><figcaption>Figure 27 — Coût au m² de référence</figcaption></figure>
+  <p><b>Excel (tous les projets)</b> télécharge ce tableau comparatif.</p>
+</section>
+
+<section class="chapitre">
+  <h2>1.12. Rapports PDF et exports Excel</h2>
+  <p>En haut à droite de chaque projet, <b>Rapport PDF</b> et <b>Excel</b> téléchargent les résultats du projet. Le client a les mêmes boutons pour son projet. Chaque téléchargement est inscrit au journal.</p>
+  <div class="cote-a-cote">
+    <figure><img src="img/manuel/rapport-pdf.png" alt="" style="max-height:150mm"><figcaption>Figure 28 — Première page du rapport PDF</figcaption></figure>
+    <div>
+      <h3 style="margin-top:12px">Le rapport PDF</h3>
+      <ol>
+        <li>Synthèse : budget initial et révisé, dépensé, solde, CPI, coût estimé, versements, trésorerie, coût au m².</li>
+        <li>Alertes.</li>
+        <li>Budget et dépenses par catégorie.</li>
+        <li>Budget, dépenses et avancement par lot.</li>
+        <li>Dépenses par mois.</li>
+        <li>Principaux postes de coût (Pareto).</li>
+        <li>Analyse statistique : descriptive, régression, prix unitaires.</li>
+      </ol>
+    </div>
+  </div>
+  <h3>Le classeur Excel</h3>
+  <p>Les nombres restent des nombres : les calculs et les graphiques se refont dans le tableur.</p>
+  <table>
+    <tr><th style="width:24%">Feuille</th><th>Contenu</th></tr>
+    <tr><td>Synthèse</td><td>Les indicateurs du projet.</td></tr>
+    <tr><td>Budget</td><td>Chaque ligne lot × catégorie : initial, avenants, révisé, dépensé, écart, consommé.</td></tr>
+    <tr><td>Dépenses</td><td>Toutes les dépenses, avec leur statut, leur motif, leur auteur et leur décideur.</td></tr>
+    <tr><td>Par catégorie, Par mois</td><td>Les répartitions de l'analyse.</td></tr>
+    <tr><td>Pareto, Prix unitaires</td><td>Le classement ABC et la dispersion des prix.</td></tr>
+    <tr><td>Avancement, Versements</td><td>Les lots et les versements du client.</td></tr>
+    <tr><td>Journal</td><td>Toutes les opérations du projet (dans votre export seulement).</td></tr>
+  </table>
+</section>
+
+<section class="chapitre">
+  <h2>1.13. Articles, fournisseurs et journal</h2>
+  <h3>Articles et fournisseurs</h3>
+  <p>Le catalogue est commun à tous les projets. Choisir un article lors d'une dépense regroupe les achats du même produit : c'est ce qui permet de suivre l'évolution des prix et de repérer un prix anormal. Les chefs de chantier peuvent ajouter des articles et des fournisseurs ; vous seule pouvez les <b>retirer</b> (ils ne sont plus proposés) ou les <b>remettre</b>.</p>
+  <figure><img src="img/manuel/ing-referentiels.png" alt=""><figcaption>Figure 29 — Articles et fournisseurs</figcaption></figure>
+  <h3>Le journal</h3>
+  <p>Le <b>Journal</b> du menu retrace toutes les opérations, sur tous les projets : connexions, créations, corrections (avec l'ancienne et la nouvelle valeur), validations, rejets, annulations, avenants, exports, gestion des comptes. Filtrez par opération ou par utilisateur. Chaque projet a aussi son journal, dans l'onglet du même nom. Le journal ne peut être ni modifié ni effacé.</p>
+  <figure><img src="img/manuel/ing-journal.png" alt=""><figcaption>Figure 30 — Le journal</figcaption></figure>
+</section>
+
+<section class="chapitre">
+  <h2>1.14. Questions fréquentes</h2>
+  <div class="grille2">
+    <div class="carte"><b>Une dépense validée est fausse.</b><br>Annulez-la avec un motif, puis saisissez la bonne. L'erreur et sa correction restent visibles.</div>
+    <div class="carte"><b>Le client ne voit pas une dépense.</b><br>Le client ne voit que les dépenses validées. Vérifiez qu'elle n'est pas en attente.</div>
+    <div class="carte"><b>Le budget initial ne se modifie plus.</b><br>Le projet n'est plus « En préparation ». Passez par un avenant.</div>
+    <div class="carte"><b>« Coût final estimé : non calculable ».</b><br>Il faut à la fois des dépenses validées et un avancement validé.</div>
+    <div class="carte"><b>La prévision par régression n'apparaît pas.</b><br>Il faut au moins 3 jours de dépenses validées sur un projet non terminé.</div>
+    <div class="carte"><b>Les photos ne s'enregistrent pas.</b><br>Le stockage des photos (Backblaze B2) doit être configuré. Sans lui, saisissez le numéro du reçu. Formats acceptés : JPEG, PNG, WebP ou PDF, 4 Mo au plus ; les photos du téléphone sont réduites automatiquement.</div>
+    <div class="carte"><b>Quelqu'un a oublié son mot de passe.</b><br>Utilisateurs, bouton « Mot de passe » sur son compte : donnez-lui un mot de passe provisoire.</div>
+    <div class="carte"><b>Un chef de chantier change de chantier.</b><br>Paramètres du projet, champ « Chef de chantier ». Ses saisies passées restent les siennes.</div>
+  </div>
+</section>
+
+<section class="chapitre sommaire">
+  <h2>Partie 2 — Manuel du Chef de chantier</h2>
+  <ol>
+    <li><span>2.1. Se connecter et installer l'application sur le téléphone</span></li>
+    <li><span>2.2. Mon compte et mon mot de passe</span></li>
+    <li><span>2.3. Le tableau de bord de mon chantier</span></li>
+    <li><span>2.4. Saisir une dépense</span></li>
+    <li><span>2.5. Suivre, corriger ou retirer mes saisies</span></li>
+    <li><span>2.6. Déclarer l'avancement des travaux</span></li>
+    <li><span>2.7. Articles et fournisseurs</span></li>
+    <li><span>2.8. Questions fréquentes</span></li>
+  </ol>
+  <div class="encadre">
+    <b>Votre rôle.</b> Vous êtes sur le chantier : vous saisissez ce qui s'y passe, au moment où cela se passe.
+    <ul>
+      <li>Les <b>dépenses</b> : matériaux, main-d'œuvre, transport, location d'équipements et autres frais, avec la photo ou le numéro du reçu.</li>
+      <li>L'<b>avancement</b> de chaque lot de travaux, avec une photo si vous le souhaitez.</li>
+    </ul>
+    Vos saisies <b>attendent la validation de l'ingénieure</b> : tant qu'elles ne sont pas validées, elles ne comptent pas dans le dépensé et le client ne les voit pas. Vous voyez les chantiers dont vous êtes le chef.
+  </div>
+</section>
+
+<section class="chapitre">
+  <h2>2.1. Se connecter et installer l'application sur le téléphone</h2>
+  <p>Ouvrez l'adresse de l'application dans le navigateur du téléphone, puis <b>Connexion</b>. Saisissez votre <b>numéro de téléphone</b> et le <b>mot de passe</b> remis par l'ingénieure. L'œil à droite du champ affiche ce que vous tapez. Une session dure 12 heures.</p>
+  <div class="cote-a-cote">
+    <figure class="telephone"><img src="img/manuel/chef-projets.png" alt=""><figcaption>Figure 31 — Mes chantiers, sur le téléphone</figcaption></figure>
+    <figure class="telephone"><img src="img/manuel/chef-menu.png" alt=""><figcaption>Figure 32 — Le menu, ouvert par le bouton ☰</figcaption></figure>
+  </div>
+  <ul>
+    <li>Le bouton <b>☰</b>, en haut à gauche, ouvre le menu : <b>Projets</b>, <b>Articles et fournisseurs</b>, vos chantiers, votre nom (Mon compte) et <b>Déconnexion</b>. Un toucher en dehors le referme.</li>
+    <li>La <b>lune</b>, en haut à droite, passe en mode sombre, plus reposant le soir.</li>
+  </ul>
+  <div class="encadre"><b>Installer l'application.</b> Dans le menu du navigateur (⋮ sur Android), choisissez « Ajouter à l'écran d'accueil » ou « Installer l'application ». L'icône Nourane Génie Civil s'ajoute au téléphone et l'application s'ouvre en plein écran, comme une application ordinaire.</div>
+</section>
+
+<section class="chapitre">
+  <h2>2.2. Mon compte et mon mot de passe</h2>
+  <p>Votre nom, en bas du menu, ouvre « Mon compte ». À la première connexion, remplacez le mot de passe provisoire : le mot de passe actuel, puis le nouveau deux fois, 8 caractères au moins.</p>
+  <figure><img src="img/manuel/commun-mot-de-passe.png" alt="" style="max-height:80mm"><figcaption>Figure 33 — Changer mon mot de passe</figcaption></figure>
+  <div class="encadre attention">Si vous avez oublié votre mot de passe, demandez-en un nouveau à l'ingénieure.</div>
+</section>
+
+<section class="chapitre">
+  <h2>2.3. Le tableau de bord de mon chantier</h2>
+  <p>Touchez un chantier : son tableau de bord s'ouvre. Les onglets, sous le nom du chantier, mènent aux <b>Dépenses</b>, à l'<b>Avancement</b> et au <b>Budget</b> ; faites-les glisser du doigt pour les voir tous.</p>
+  <div class="cote-a-cote">
+    <figure class="telephone"><img src="img/manuel/chef-tableau.png" alt=""><figcaption>Figure 34 — Tableau de bord du chantier</figcaption></figure>
+    <div>
+      <ul>
+        <li><b>Budget révisé</b> : le budget du chantier, avenants compris.</li>
+        <li><b>Dépensé (validé)</b> : les dépenses validées par l'ingénieure, et ce qui attend sa validation.</li>
+        <li><b>Budget restant</b> : ce qu'il reste à dépenser.</li>
+        <li><b>Travaux réalisés</b> : l'avancement du chantier, comparé au délai écoulé.</li>
+        <li><b>Les graphiques</b> : le coût cumulé jour après jour et la répartition des dépenses par catégorie.</li>
+      </ul>
+      <p>Le bouton rose <b>+ Dépense</b>, en bas à droite, reste sous le pouce sur toutes les pages du chantier : c'est le chemin le plus court vers une nouvelle saisie.</p>
+    </div>
+  </div>
+</section>
+
+<section class="chapitre">
+  <h2>2.4. Saisir une dépense</h2>
+  <p>Touchez <b>+ Dépense</b> (ou, sur ordinateur, <b>Nouvelle dépense</b> dans l'onglet Dépenses).</p>
+  <div class="trois">
+    <figure class="telephone"><img src="img/manuel/chef-saisie-1.png" alt=""><figcaption>Figure 35 — Lot, article, catégorie</figcaption></figure>
+    <figure class="telephone"><img src="img/manuel/chef-saisie-2.png" alt=""><figcaption>Figure 36 — Quantité, prix et montant calculé</figcaption></figure>
+    <figure class="telephone"><img src="img/manuel/chef-saisie-3.png" alt=""><figcaption>Figure 37 — Date, fournisseur, reçu, photo</figcaption></figure>
+  </div>
+  <table>
+    <tr><th style="width:30%">Champ</th><th>Ce qu'il faut savoir</th></tr>
+    <tr><td>Lot de travaux</td><td>Le lot auquel la dépense est imputée : fondations, élévation des murs, toiture…</td></tr>
+    <tr><td>Article du catalogue</td><td>Facultatif, mais conseillé pour les achats courants (ciment, fer, sable, journée de maçon…). Il remplit seul la catégorie, l'unité et le <b>dernier prix payé</b>, et permet de comparer les prix d'un achat à l'autre. Choisissez « Autre (libellé libre) » pour un achat hors catalogue.</td></tr>
+    <tr><td>Catégorie</td><td>Matériaux, main-d'œuvre, transport, location d'équipements ou autres frais.</td></tr>
+    <tr><td>Libellé</td><td>Obligatoire sans article : par exemple « journées de coffreur ».</td></tr>
+    <tr><td>Quantité, unité</td><td>40 sacs, 2 m³, 6 jours, 3 voyages… Les décimales s'écrivent avec une virgule.</td></tr>
+    <tr><td>Prix unitaire (FCFA)</td><td>Le prix d'une unité, tel qu'il figure sur le reçu.</td></tr>
+    <tr><td>Date</td><td>Le jour de la dépense ; elle ne peut pas être dans le futur.</td></tr>
+    <tr><td>Fournisseur, n° de reçu</td><td>Facultatifs, mais le numéro du reçu (ou sa photo) justifie la dépense.</td></tr>
+    <tr><td>Photo du reçu</td><td>Facultative. <b>Prendre ou choisir</b> ouvre l'appareil photo ; la photo est réduite automatiquement avant l'envoi.</td></tr>
+  </table>
+  <div class="encadre"><b>Le montant se calcule tout seul.</b> Le cadre rose affiche quantité × prix unitaire pendant que vous tapez. Vous n'avez jamais à le calculer ni à le saisir.</div>
+  <p><b>Enregistrer la dépense</b> : un message vert confirme l'enregistrement et le formulaire se vide, prêt pour la saisie suivante. Si un champ manque, un message rouge l'indique et ce que vous avez tapé reste en place.</p>
+  <figure><img src="img/manuel/chef-saisie-ok.png" alt="" style="max-height:30mm"><figcaption>Figure 38 — La dépense est enregistrée et attend la validation</figcaption></figure>
+</section>
+
+<section class="chapitre">
+  <h2>2.5. Suivre, corriger ou retirer mes saisies</h2>
+  <p>L'onglet <b>Dépenses</b> liste toutes les dépenses du chantier, avec leur statut. Les filtres retrouvent une dépense par libellé, numéro de reçu, catégorie, lot, mois ou statut.</p>
+  <figure class="telephone"><img src="img/manuel/chef-depenses.png" alt=""><figcaption>Figure 39 — Les dépenses en attente de validation</figcaption></figure>
+  <table>
+    <tr><th style="width:22%">Statut</th><th>Ce que cela veut dire</th></tr>
+    <tr><td>En attente</td><td>L'ingénieure ne l'a pas encore examinée. Vous pouvez encore la corriger ou la retirer.</td></tr>
+    <tr><td>Validée</td><td>Elle compte dans le dépensé ; le client la voit. Elle ne se modifie plus.</td></tr>
+    <tr><td>Rejetée</td><td>L'ingénieure l'a refusée ; son motif s'affiche sous le libellé. Corrigez le problème et saisissez-la de nouveau.</td></tr>
+    <tr><td>Annulée</td><td>Retirée, ou annulée par l'ingénieure ; elle reste visible, barrée, avec son motif.</td></tr>
+  </table>
+  <h3>Corriger une saisie en attente</h3>
+  <p>Touchez le libellé de la dépense : sa fiche s'ouvre, avec le formulaire « Corriger la saisie ». Modifiez ce qui est faux, puis <b>Enregistrer les corrections</b>. L'ancienne et la nouvelle valeur sont gardées dans l'historique, en bas de la fiche.</p>
+  <figure><img src="img/manuel/chef-correction.png" alt=""><figcaption>Figure 40 — Corriger une saisie tant qu'elle est en attente</figcaption></figure>
+  <figure><img src="img/manuel/chef-historique.png" alt="" style="max-height:55mm"><figcaption>Figure 41 — L'historique de la dépense</figcaption></figure>
+  <h3>Retirer une saisie</h3>
+  <p>Une dépense saisie par erreur et encore en attente se retire avec le bouton <b>Retirer</b> de la liste ; l'application vous demande pourquoi. Elle reste visible, barrée.</p>
+  <div class="encadre attention">Vous ne pouvez corriger ou retirer que <b>vos propres saisies</b>, et seulement tant qu'elles sont <b>en attente</b>.</div>
+</section>
+
+<section class="chapitre">
+  <h2>2.6. Déclarer l'avancement des travaux</h2>
+  <p>L'onglet <b>Avancement</b> montre, pour chaque lot, le pourcentage réalisé validé par l'ingénieure. Pour le mettre à jour, remplissez <b>Nouveau relevé d'avancement</b>.</p>
+  <div class="cote-a-cote">
+    <figure class="telephone"><img src="img/manuel/chef-releve.png" alt=""><figcaption>Figure 42 — Nouveau relevé d'avancement</figcaption></figure>
+    <div>
+      <ul>
+        <li><b>Lot</b> : la liste rappelle l'avancement actuel de chaque lot.</li>
+        <li><b>Avancement (%)</b> : le pourcentage <b>cumulé</b> réalisé à cette date, depuis le début du lot. Par exemple, 60 si les murs sont montés aux trois cinquièmes, et non pas les 10 % de la semaine.</li>
+        <li><b>Date</b> : le jour du constat.</li>
+        <li><b>Commentaire</b> : ce qui a été fait. Obligatoire si le pourcentage <b>baisse</b> (démolition, malfaçon reprise).</li>
+        <li><b>Photo du chantier</b> : facultative, elle est montrée au client une fois le relevé validé.</li>
+      </ul>
+      <p>Le relevé attend la validation de l'ingénieure ; une fois validé, il fixe l'avancement du lot.</p>
+    </div>
+  </div>
+</section>
+
+<section class="chapitre">
+  <h2>2.7. Articles et fournisseurs</h2>
+  <p>Si un produit ou un fournisseur manque dans les listes du formulaire de dépense, ajoutez-le : menu <b>Articles et fournisseurs</b>.</p>
+  <ul>
+    <li><b>Nouvel article</b> : la désignation précise (« Ciment CPJ 42,5, sac de 50 kg »), l'unité d'achat et la catégorie.</li>
+    <li><b>Nouveau fournisseur</b> : le nom, et si possible le téléphone et l'activité.</li>
+  </ul>
+  <figure><img src="img/manuel/ing-referentiels.png" alt=""><figcaption>Figure 43 — Articles et fournisseurs (ici vus par l'ingénieure, qui seule peut les retirer)</figcaption></figure>
+  <div class="encadre">Utilisez toujours le même article pour le même produit : c'est ce qui permet de comparer les prix d'un achat à l'autre, et de repérer un prix anormal.</div>
+</section>
+
+<section class="chapitre">
+  <h2>2.8. Questions fréquentes</h2>
+  <div class="grille2">
+    <div class="carte"><b>Je ne vois pas mon chantier.</b><br>L'ingénieure doit vous désigner chef de chantier dans les paramètres du projet.</div>
+    <div class="carte"><b>Le bouton « + Dépense » n'apparaît pas.</b><br>Le chantier est terminé : il n'accepte plus de saisie. Sur ordinateur, utilisez « Nouvelle dépense ».</div>
+    <div class="carte"><b>« La date ne peut pas être dans le futur ».</b><br>Une dépense se saisit le jour où elle a lieu, ou après.</div>
+    <div class="carte"><b>La photo ne s'envoie pas.</b><br>Formats acceptés : photo ou PDF, 4 Mo au plus. Si le stockage des photos n'est pas configuré, indiquez le numéro du reçu.</div>
+    <div class="carte"><b>Ma dépense a été rejetée.</b><br>Lisez le motif sous le libellé, corrigez (reçu lisible, bon prix, bon lot) et saisissez-la de nouveau.</div>
+    <div class="carte"><b>Je me suis trompé après validation.</b><br>Prévenez l'ingénieure : elle annulera la dépense avec un motif, et vous saisirez la bonne.</div>
+  </div>
+</section>
+
+<section class="chapitre sommaire">
+  <h2>Partie 3 — Manuel du Client</h2>
+  <ol>
+    <li><span>3.1. Se connecter et se repérer</span></li>
+    <li><span>3.2. Mon compte et mon mot de passe</span></li>
+    <li><span>3.3. Le tableau de bord de mon projet</span></li>
+    <li><span>3.4. Suivre l'avancement des travaux</span></li>
+    <li><span>3.5. Les dépenses et le budget</span></li>
+    <li><span>3.6. Mes versements</span></li>
+    <li><span>3.7. L'analyse, le rapport PDF et l'export Excel</span></li>
+    <li><span>3.8. Questions fréquentes</span></li>
+  </ol>
+  <div class="encadre">
+    <b>Votre rôle.</b> Vous êtes le maître d'ouvrage : vous financez le projet et vous suivez son avancement.
+    <ul>
+      <li>Vous voyez <b>vos projets</b>, et seulement eux.</li>
+      <li>Vous consultez l'avancement des travaux, le budget et les <b>dépenses validées</b> par l'ingénieure.</li>
+      <li>Vous <b>déclarez vos versements</b> ; l'ingénieure confirme leur réception.</li>
+      <li>Vous téléchargez le <b>rapport PDF</b> et l'<b>export Excel</b> de votre projet.</li>
+    </ul>
+    Vous ne modifiez ni le budget ni les dépenses : ces chiffres sont tenus par l'ingénieure et le chef de chantier, et chaque opération est tracée.
+  </div>
+</section>
+
+<section class="chapitre">
+  <h2>3.1. Se connecter et se repérer</h2>
+  <p>Ouvrez l'adresse de l'application, puis <b>Connexion</b>. Saisissez votre <b>numéro de téléphone</b> et le <b>mot de passe</b> remis par l'ingénieure. L'œil à droite du champ affiche ce que vous tapez. Une session dure 12 heures.</p>
+  <figure><img src="img/manuel/commun-connexion.png" alt=""><figcaption>Figure 44 — Écran de connexion</figcaption></figure>
+  <figure><img src="img/manuel/client-projets.png" alt=""><figcaption>Figure 45 — Mes projets</figcaption></figure>
+  <p>Chaque projet affiche le budget consommé et les travaux réalisés, en barres, le montant dépensé, le budget, la fin prévue, le chef de chantier et ce que vous avez déjà versé. Touchez un projet pour l'ouvrir. Sur téléphone, le menu s'ouvre avec le bouton ☰ en haut à gauche.</p>
+</section>
+
+<section class="chapitre">
+  <h2>3.2. Mon compte et mon mot de passe</h2>
+  <p>Votre nom, en bas du menu, ouvre « Mon compte ». À la première connexion, remplacez le mot de passe provisoire : le mot de passe actuel, puis le nouveau deux fois, 8 caractères au moins.</p>
+  <figure><img src="img/manuel/commun-mot-de-passe.png" alt="" style="max-height:80mm"><figcaption>Figure 46 — Changer mon mot de passe</figcaption></figure>
+</section>
+
+<section class="chapitre">
+  <h2>3.3. Le tableau de bord de mon projet</h2>
+  <figure><img src="img/manuel/client-tableau.png" alt=""><figcaption>Figure 47 — Tableau de bord de la villa d'Odza</figcaption></figure>
+  <table>
+    <tr><th style="width:28%">Carte</th><th>Ce qu'elle vous dit</th></tr>
+    <tr><td>Budget révisé</td><td>Le budget prévu au départ, plus les révisions décidées en cours de chantier (avenants).</td></tr>
+    <tr><td>Dépensé (validé)</td><td>Les dépenses validées par l'ingénieure, en FCFA et en % du budget.</td></tr>
+    <tr><td>Budget restant</td><td>Ce qu'il reste à dépenser. En rouge s'il est dépassé.</td></tr>
+    <tr><td>Travaux réalisés</td><td>L'avancement du chantier, comparé au temps écoulé depuis le début.</td></tr>
+    <tr><td>Coût final estimé</td><td>Ce que coûterait le projet achevé au rythme actuel des dépenses et des travaux.</td></tr>
+    <tr><td>Mes versements reçus</td><td>Vos versements confirmés par l'ingénieure ; ceux à confirmer sont indiqués à part.</td></tr>
+    <tr><td>Trésorerie du chantier</td><td>Vos versements moins les dépenses validées. Négative, elle signale qu'un nouveau versement est nécessaire.</td></tr>
+  </table>
+  <p>La <b>courbe</b> montre comment le coût cumulé a progressé jour après jour, et où il arriverait à la fin prévue ; l'<b>anneau</b> répartit les dépenses par catégorie ; les <b>barres</b> comparent le budget et le dépensé de chaque catégorie.</p>
+  <p>En haut à droite, <b>Rapport PDF</b> et <b>Excel</b> téléchargent les résultats du projet (chapitre 7).</p>
+</section>
+
+<section class="chapitre">
+  <h2>3.4. Suivre l'avancement des travaux</h2>
+  <p>L'onglet <b>Avancement</b> donne, lot par lot (terrassement, fondations, murs, toiture…), le pourcentage de travaux réalisé, validé par l'ingénieure. L'avancement global pondère chaque lot par son budget.</p>
+  <figure><img src="img/manuel/client-avancement.png" alt=""><figcaption>Figure 48 — Avancement des travaux</figcaption></figure>
+  <ul>
+    <li>Le graphique compare, pour chaque lot, le <b>pourcentage du budget consommé</b> (rose) et le <b>pourcentage des travaux réalisés</b> (bleu) : un lot dont la barre rose dépasse nettement la bleue coûte plus cher que prévu pour ce qui est fait.</li>
+    <li>Les <b>photos du chantier</b>, jointes aux relevés validés, s'affichent sous les graphiques ; touchez-en une pour l'agrandir.</li>
+    <li>Le tableau <b>Relevés</b> retrace chaque étape : date, lot, pourcentage et commentaire du chef de chantier.</li>
+  </ul>
+</section>
+
+<section class="chapitre">
+  <h2>3.5. Les dépenses et le budget</h2>
+  <p>L'onglet <b>Dépenses</b> liste les dépenses <b>validées</b> du chantier : date, libellé, fournisseur, lot, catégorie, quantité × prix unitaire et montant. Les filtres retrouvent une dépense par libellé, numéro de reçu, catégorie, lot ou mois ; le total se recalcule sur la sélection.</p>
+  <figure><img src="img/manuel/client-depenses.png" alt=""><figcaption>Figure 49 — Les dépenses validées</figcaption></figure>
+  <p>L'onglet <b>Budget</b> montre le budget par lot et par catégorie, avec dans chaque case le dépensé et le budget prévu. Une case rouge signale un poste dépassé. Le tableau des <b>avenants</b>, en bas de page, donne chaque révision du budget et son motif.</p>
+  <div class="encadre">Les dépenses saisies par le chef de chantier n'apparaissent qu'après la validation de l'ingénieure : vous ne voyez que des chiffres vérifiés.</div>
+</section>
+
+<section class="chapitre">
+  <h2>3.6. Mes versements</h2>
+  <p>Après chaque versement de fonds à l'ingénieure, déclarez-le dans l'onglet <b>Mes versements</b> : montant, date, mode de paiement (espèces, virement, Mobile Money ou chèque) et référence de l'opération.</p>
+  <figure><img src="img/manuel/client-versement.png" alt=""><figcaption>Figure 50 — Déclarer un versement</figcaption></figure>
+  <ul>
+    <li>Le versement est « <b>En attente</b> » jusqu'à ce que l'ingénieure confirme la réception des fonds ; il passe alors à « <b>Reçu</b> ».</li>
+    <li>S'il est <b>rejeté</b>, le motif s'affiche dans l'historique (par exemple, fonds non reçus).</li>
+    <li>La barre « Financement du projet » indique la part du budget déjà versée ; un message rouge prévient quand les dépenses validées dépassent les fonds reçus.</li>
+  </ul>
+</section>
+
+<section class="chapitre">
+  <h2>3.7. L'analyse, le rapport PDF et l'export Excel</h2>
+  <p>L'onglet <b>Analyse</b> présente les résultats statistiques de votre projet : dépenses par catégorie et par mois, prévision du coût final, valeur des travaux réalisés, dispersion des montants, principaux postes de coût et évolution des prix. Le manuel de l'ingénieure en explique les calculs.</p>
+  <figure><img src="img/manuel/ing-analyse-categories.png" alt=""><figcaption>Figure 51 — Analyse : dépenses par catégorie</figcaption></figure>
+  <ul>
+    <li><b>Rapport PDF</b> : un rapport récapitulatif de 3 pages, avec la synthèse, les alertes, le budget et les dépenses par catégorie et par lot, les dépenses par mois, les principaux postes de coût et l'analyse statistique.</li>
+    <li><b>Excel</b> : un classeur avec la synthèse, le budget, toutes les dépenses validées, les répartitions, l'avancement et vos versements, pour refaire vos propres calculs.</li>
+  </ul>
+  <h3>Le mode sombre</h3>
+  <p>La lune, en haut à droite, passe l'application en mode sombre ; le soleil revient au mode clair. Votre choix est retenu sur l'appareil.</p>
+  <figure><img src="img/manuel/client-sombre.png" alt=""><figcaption>Figure 52 — Le tableau de bord en mode sombre</figcaption></figure>
+</section>
+
+<section class="chapitre">
+  <h2>3.8. Questions fréquentes</h2>
+  <div class="grille2">
+    <div class="carte"><b>Je ne vois pas mon projet.</b><br>L'ingénieure doit vous désigner comme client du projet.</div>
+    <div class="carte"><b>Une dépense dont on m'a parlé n'apparaît pas.</b><br>Elle attend sans doute la validation de l'ingénieure.</div>
+    <div class="carte"><b>Mon versement reste « En attente ».</b><br>L'ingénieure doit confirmer la réception des fonds ; contactez-la si cela tarde.</div>
+    <div class="carte"><b>Le budget a augmenté.</b><br>Consultez le tableau des avenants dans l'onglet Budget : chaque révision a son motif.</div>
+    <div class="carte"><b>« Coût final estimé : non calculable ».</b><br>Au tout début du chantier, il n'y a pas encore assez de dépenses et d'avancement validés.</div>
+    <div class="carte"><b>J'ai oublié mon mot de passe.</b><br>Demandez un nouveau mot de passe provisoire à l'ingénieure.</div>
+  </div>
+</section>
+
+</body>
+</html>
