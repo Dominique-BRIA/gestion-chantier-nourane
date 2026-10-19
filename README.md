@@ -72,6 +72,7 @@ Pour tout effacer et recharger : `npm run db:seed -- --reinitialiser`.
 2. **Backblaze B2** (facultatif) : compartiment privé et clé limitée à ce compartiment ;
    renseigner `B2_KEY_ID`, `B2_APPLICATION_KEY`, `B2_BUCKET` et `B2_ENDPOINT`
    (`https://s3.<region>.backblazeb2.com`). Sans ces variables, l'application fonctionne sans photos.
+   Contrôle : `npx tsx --env-file=.env scripts/tester-stockage.ts` (dépose, relit puis supprime une image).
 3. **Vercel** : importer le dépôt GitHub, renseigner les variables d'environnement ci-dessus et
    `SESSION_SECRET` (32 caractères aléatoires au moins), puis déployer. La commande de build
    applique les migrations avant de compiler.
