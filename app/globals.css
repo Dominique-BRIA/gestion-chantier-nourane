@@ -1,0 +1,175 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Clair : blanc et rose du logo, texte charbon */
+    --background: 330 40% 99%;
+    /* Texte : le charbon du logo */
+    --foreground: 220 14% 17%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 14% 17%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 14% 17%;
+    --primary: 333 71% 51%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 330 60% 97%;
+    --secondary-foreground: 220 14% 17%;
+    --muted: 330 40% 96%;
+    --muted-foreground: 330 8% 44%;
+    --accent: 330 70% 96%;
+    --accent-foreground: 333 71% 40%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 330 35% 91%;
+    --input: 330 30% 87%;
+    --ring: 333 71% 51%;
+    --radius: 0.75rem;
+    --skeleton: 330 40% 93%;
+    --skeleton-shine: 0 0% 100%;
+  }
+
+  /* Sombre : fonds prune très profonds, rose plus lumineux */
+  .dark {
+    --background: 330 22% 6%;
+    --foreground: 330 15% 96%;
+    --card: 330 20% 9%;
+    --card-foreground: 330 15% 96%;
+    --popover: 330 18% 11%;
+    --popover-foreground: 330 15% 96%;
+    --primary: 330 81% 62%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 330 15% 14%;
+    --secondary-foreground: 330 15% 96%;
+    --muted: 330 15% 14%;
+    --muted-foreground: 330 8% 68%;
+    --accent: 330 25% 16%;
+    --accent-foreground: 330 81% 75%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 330 14% 18%;
+    --input: 330 14% 22%;
+    --ring: 330 81% 62%;
+    --skeleton: 330 15% 15%;
+    --skeleton-shine: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  /* Squelettes : la forme du contenu à venir, jamais une roue au centre. */
+  @keyframes skeleton-shimmer {
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  .skeleton-shimmer {
+    position: relative;
+    overflow: hidden;
+    background-color: hsl(var(--skeleton));
+  }
+  .skeleton-shimmer::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transform: translateX(-100%);
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      hsl(var(--skeleton-shine) / 0.45) 42%,
+      hsl(var(--skeleton-shine) / 0.95) 50%,
+      hsl(var(--skeleton-shine) / 0.45) 58%,
+      transparent 100%
+    );
+    animation: skeleton-shimmer 1.25s ease-in-out infinite;
+  }
+  .dark .skeleton-shimmer::after {
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      hsl(var(--skeleton-shine) / 0.08) 40%,
+      hsl(var(--skeleton-shine) / 0.28) 50%,
+      hsl(var(--skeleton-shine) / 0.08) 60%,
+      transparent 100%
+    );
+  }
+}
+
+/* Tiroir du menu sur téléphone */
+@keyframes entree-fondu {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes entree-gauche {
+  from {
+    transform: translateX(-100%);
+  }
+}
+.entree-fondu {
+  animation: entree-fondu 150ms ease-out;
+}
+.entree-gauche {
+  animation: entree-gauche 200ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Fine barre en haut de l'écran : part dès le clic sur un lien, ou pendant la
+   mise à jour silencieuse d'une page rouverte depuis la copie locale. */
+.barre-navigation {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 60;
+  height: 3px;
+  pointer-events: none;
+}
+.barre-navigation > div {
+  height: 100%;
+  width: 90%;
+  background: linear-gradient(90deg, hsl(var(--primary)), hsl(330 90% 72%));
+  transform-origin: left;
+  animation: barre-navigation 6s cubic-bezier(0.1, 0.7, 0.3, 1) forwards;
+}
+@keyframes barre-navigation {
+  from {
+    transform: scaleX(0.05);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skeleton-shimmer::after,
+  .barre-navigation > div,
+  .entree-fondu,
+  .entree-gauche {
+    animation: none;
+  }
+  .skeleton-shimmer::after {
+    opacity: 0.5;
+  }
+  .barre-navigation > div {
+    transform: none;
+    opacity: 0.6;
+  }
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(var(--border)) transparent;
+}
+
+@media print {
+  .pas-imprimer {
+    display: none !important;
+  }
+}
